@@ -388,7 +388,10 @@ public class Program
         for (int i = 1; i <= n; ++i)
         {
             double x = double.Parse(Console.ReadLine());
-            answer = Math.Min(answer, x);
+            if (x < answer)
+            {
+                answer = x;
+            }
         }
 		// end
 
